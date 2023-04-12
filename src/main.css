@@ -72,7 +72,7 @@
     @apply w-4;
     @apply h-4;
     @apply rounded-full;
-    background: rgba(16, 163, 127);
+    background: rgb(255, 179, 255);
   }
 
   ::-webkit-scrollbar {
@@ -260,7 +260,7 @@
 .hljs-meta-string,
 .hljs-regexp,
 .hljs-string {
-  color: #00a67d;
+  color: #ff96e5;
 }
 .hljs-attr,
 .hljs-number,
