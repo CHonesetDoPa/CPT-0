@@ -1,28 +1,28 @@
 {
-  "configuration": "Konfigurasi",
-  "model": "Model",
+  "configuration": "配置",
+  "model": "模型",
   "token": {
-    "label": "Token Maksimum",
-    "description": "Jumlah token maksimum untuk dijana dalam lengkapan sembang. Panjang keseluruhan token input dan token yang dijana adalah terhad oleh panjang konteks model."
+    "label": "最大 Token",
+    "description": "助手生成一条信息可以包含的最大 token 数。最大 token 数也受到模型的总长度限制，上文的 token 数和生成的 token 数之和不能超过模型的 token 总数（例如 gpt-3.5-turbo 的 token 总数是 4096）。"
   },
-  "default": "Lalai",
+  "default": "默认",
   "temperature": {
-    "label": "Suhu",
-    "description": "Suhu pensampelan yang digunakan, antara 0 dan 2. Nilai yang lebih tinggi seperti 0.8 akan menjadikan keluaran lebih rawak, manakala nilai yang lebih rendah seperti 0.2 akan menjadikannya lebih terarah dan deterministik. Kami secara umumnya mengesyorkan mengubah ini atau atas p tetapi bukan kedua-duanya. (Lalai: 1)"
+    "label": "采样温度",
+    "description": "使用何种采样温度，值在 0 到 2 之间。较高的数值如 0.8 会使输出更加随机，而较低的数值如 0.2 会使输出更加集中和确定。我们通常建议修改此参数或 Top-p，但不要同时修改两者。(默认: 1)"
   },
   "presencePenalty": {
-    "label": "Hukuman Kehadiran",
-    "description": "Nombor antara -2.0 dan 2.0. Nilai positif menghukum token baru berdasarkan sama ada mereka muncul dalam teks sejauh ini, meningkatkan kemungkinan model untuk bercakap mengenai topik baru. (Lalai: 0)"
+    "label": "存在惩罚",
+    "description": "数值在 -2.0 到 2.0 之间。正值会根据新 token 是否已经出现在文本中来惩罚它们，增加模型谈论新话题的可能性。 (默认: 0)"
   },
   "topP": {
     "label": "Top-p",
-    "description": "Nombor antara 0 dan 1. Alternatif kepada pensampelan dengan suhu, dipanggil pensampelan nukleus, di mana model mempertimbangkan hasil token dengan jisim kebarangkalian top p. Jadi 0.1 bermaksud hanya token yang terdiri daripada 10% jisim kebarangkalian teratas dipertimbangkan. Secara umumnya, kami mengesyorkan untuk mengubah suhu atau nilai paling atas tetapi bukan kedua-duanya. (Lalai: 1)"
+    "description": "数值在 0 到 1 之间。采用核采样（nucleus sampling）的一种采样温度的替代方法，模型仅考虑前 Top-p 概率质量的 token。因此，0.1 表示仅考虑前 10% 概率质量的 token。我们通常建议修改此参数或采样温度，但不要同时修改两者。(默认: 1)"
   },
   "frequencyPenalty": {
-    "label": "Penalti Frekuensi",
-    "description": "Nombor antara -2.0 dan 2.0. Nilai positif memberi hukuman kepada token baru berdasarkan frekuensi sedia ada mereka dalam teks sejauh ini, mengurangkan kebarangkalian model untuk mengulangi baris yang sama secara harfiah. (Lalai: 0)"
+    "label": "频率惩罚",
+    "description": "数值在 -2.0 到 2.0 之间。正值会根据新 token 在文本中的现有频率来惩罚它们，降低模型直接重复相同语句的可能性。(默认: 0)"
   },
-  "defaultChatConfig": "Konfigurasi Cakap Lalai",
-  "defaultSystemMessage": "Mesej Sistem Lalai",
-  "resetToDefault": "Set Semula ke Lalai"
+  "defaultChatConfig": "默认聊天配置",
+  "defaultSystemMessage": "默认系统消息",
+  "resetToDefault": "重置为默认"
 }

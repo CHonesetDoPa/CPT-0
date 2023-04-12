@@ -1,15 +1,15 @@
 {
-  "securityMessage": "Kami mengutamakan keselamatan kunci API anda dan mengendalikannya dengan penuh berhati-hati. Kunci anda disimpan secara eksklusif di pelayar anda dan tidak pernah dikongsi dengan mana-mana entiti pihak ketiga. Ia hanya digunakan untuk tujuan yang dimaksudkan untuk mengakses API OpenAI dan bukan untuk penggunaan yang tidak sah.",
+  "securityMessage": "我们高度优先考虑您的 API 密钥的安全，并非常小心地处理它。您的密钥将专门存储在您的浏览器中，并且永远不会与任何第三方实体共享。它仅用于访问 OpenAI API 的预期用途，而不是用于任何其他未经授权的用途。",
   "apiEndpoint": {
-    "inputLabel": "Hujung API",
-    "description": "Apabila anda memilih hujung nyawa API yang tidak rasmi, ia pada dasarnya berfungsi sebagai proksi. Proksi berfungsi dengan bertindak sebagai perantara di antara peranti anda dan pelayan destinasi, dalam kes ini, API OpenAI. Dengan berbuat demikian, ia membolehkan anda mengakses API OpenAI di kawasan di mana ia mungkin sebaliknya terhad.",
-    "warn": "Selain itu, jika anda menyediakan hujung nyawa API tersendiri yang memberikan akses percuma ke API OpenAI, anda boleh menggunakan ChatGPT tanpa perlu menyediakan kunci API dengan hanya meninggalkan medan kunci API kosong. Walau bagaimanapun, amat penting untuk berhati-hati semasa menggunakan hujung nyawa API pihak ketiga, kerana yang tidak boleh dipercayai mungkin merekodkan maklumat peribadi anda dalam perbualan. Sentiasa sahkan kebolehpercayaan hujung nyawa API sebelum menggunakannya untuk melindungi privasi dan keselamatan anda."
+    "inputLabel": "API 端点",
+    "description": "选用非官方 API 端点时，它会作为代理运作。代理作用是在您的设备和目标服务器（在本例中为 OpenAI API）之间充当中介。通过这样做，您能够在被限制的地区访问 OpenAI API。",
+    "warn": "此外，如果您提供自定义 API 端点并授予免费访问 OpenAI API 的权限，您可以通过留空 API 密钥字段来使用 ChatGPT，而无需提供API密钥。但是，使用第三方 API 端点时务必谨慎，因为不可信的端点可能会在对话中记录您的个人信息。使用之前请始终验证 API 端点的可靠性以保护您的隐私和安全。"
   },
   "apiKey": {
-    "howTo": "Dapatkan kunci API peribadi anda <0>di sini</0>.",
-    "inputLabel": "Kunci API"
+    "howTo": "在<0>此处</0>获取您的个人 API 密钥。",
+    "inputLabel": "API 密钥"
   },
-  "customEndpoint": "Gunakan hujung API tersuai",
-  "advancedConfig": "Lihat konfigurasi API lanjutan <0>di sini</0>",
-  "noApiKeyWarning": "Tiada kunci API yang dibekalkan! Sila periksa tetapan API anda."
+  "customEndpoint": "使用自定义 API 端点",
+  "advancedConfig": "在<0>此处</0>查看高级 API 设置",
+  "noApiKeyWarning": "缺少 API key，请检查 API 设置。"
 }

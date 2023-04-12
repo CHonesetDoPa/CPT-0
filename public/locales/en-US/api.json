@@ -1,15 +1,15 @@
 {
-  "securityMessage": "We prioritize the security of your API key and handle it with utmost care. Your key is exclusively stored on your browser and never shared with any third-party entity. It is solely used for the intended purpose of accessing the OpenAI API and not for any other unauthorized use.",
+  "securityMessage": "我们高度优先考虑您的 API 密钥的安全，并非常小心地处理它。您的密钥将专门存储在您的浏览器中，并且永远不会与任何第三方实体共享。它仅用于访问 OpenAI API 的预期用途，而不是用于任何其他未经授权的用途。",
   "apiEndpoint": {
-    "inputLabel": "API Endpoint",
-    "description": "When you choose an unofficial API endpoint, it functions as a proxy. A proxy works by acting as an intermediary between your device and the destination server, in this case, the OpenAI API. By doing so, it enables you to access the OpenAI API in regions where it might otherwise be restricted.",
-    "warn": "Additionally, if you provide a custom API endpoint that grants free access to the OpenAI API, you can use ChatGPT without the need to supply an API key by simply leaving the API key field blank. However, it's crucial to be cautious when using third-party API endpoints, as untrustworthy ones may log your personal information in the conversations. Always verify the reliability of an API endpoint before using it to protect your privacy and security."
+    "inputLabel": "API 端点",
+    "description": "选用非官方 API 端点时，它会作为代理运作。代理作用是在您的设备和目标服务器（在本例中为 OpenAI API）之间充当中介。通过这样做，您能够在被限制的地区访问 OpenAI API。",
+    "warn": "此外，如果您提供自定义 API 端点并授予免费访问 OpenAI API 的权限，您可以通过留空 API 密钥字段来使用 ChatGPT，而无需提供API密钥。但是，使用第三方 API 端点时务必谨慎，因为不可信的端点可能会在对话中记录您的个人信息。使用之前请始终验证 API 端点的可靠性以保护您的隐私和安全。"
   },
   "apiKey": {
-    "howTo": "Get your personal API key <0>here</0>.",
-    "inputLabel": "API Key"
+    "howTo": "在<0>此处</0>获取您的个人 API 密钥。",
+    "inputLabel": "API 密钥"
   },
-  "customEndpoint": "Use custom API endpoint",
-  "advancedConfig": "View advanced API configuration <0>here</0>",
-  "noApiKeyWarning": "No API key supplied! Please check your API settings."
+  "customEndpoint": "使用自定义 API 端点",
+  "advancedConfig": "在<0>此处</0>查看高级 API 设置",
+  "noApiKeyWarning": "缺少 API key，请检查 API 设置。"
 }

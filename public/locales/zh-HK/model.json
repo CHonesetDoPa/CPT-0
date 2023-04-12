@@ -3,26 +3,26 @@
   "model": "模型",
   "token": {
     "label": "最大 Token",
-    "description": "控制助手嘅一條 msg 最多可以 gen 幾多 token。最大 token 數仲受到模型總長度嘅限制，上文嘅 token 數同生成嘅 token 數加埋一齊唔可以超過模型嘅 token 總數（譬如 gpt-3.5-turbo 嘅 token 總數係 4096）。"
+    "description": "助手生成一条信息可以包含的最大 token 数。最大 token 数也受到模型的总长度限制，上文的 token 数和生成的 token 数之和不能超过模型的 token 总数（例如 gpt-3.5-turbo 的 token 总数是 4096）。"
   },
-  "default": "預設",
+  "default": "默认",
   "temperature": {
-    "label": "採樣温度",
-    "description": "係一個 0 到 2 之間嘅數值。較高嘅數值如 0.8 會令到輸出更加隨機，而較低嘅數值如 0.2 會令到輸出更加集中同確定。通常建議修改呢個引數或者 Top-p，但係唔好同時修改兩者。(預設: 1)"
+    "label": "采样温度",
+    "description": "使用何种采样温度，值在 0 到 2 之间。较高的数值如 0.8 会使输出更加随机，而较低的数值如 0.2 会使输出更加集中和确定。我们通常建议修改此参数或 Top-p，但不要同时修改两者。(默认: 1)"
   },
   "presencePenalty": {
-    "label": "存在懲罰",
-    "description": "係一個 -2.0 到 2.0 之間嘅數值。正嘅數值表示，如果某個 token 已經出現喺文字當中，輸出嗰陣就會懲罰佢，令到佢被揀中嘅機率降低，即係可以增加模型講新話題嘅機會。 (預設: 0)"
+    "label": "存在惩罚",
+    "description": "数值在 -2.0 到 2.0 之间。正值会根据新 token 是否已经出现在文本中来惩罚它们，增加模型谈论新话题的可能性。 (默认: 0)"
   },
   "topP": {
     "label": "Top-p",
-    "description": "係一個 0 到 1 之間嘅數值。喺核採樣（根據温度採樣嘅一種替代方法）入面，採樣嗰陣會由機率最高嗰啲 token 當中揀，0.1 表示僅考慮機率求和達到 10% 嘅 token。通常建議修改呢個引數或採樣温度，但唔好同時修改兩者。(預設: 1)"
+    "description": "数值在 0 到 1 之间。采用核采样（nucleus sampling）的一种采样温度的替代方法，模型仅考虑前 Top-p 概率质量的 token。因此，0.1 表示仅考虑前 10% 概率质量的 token。我们通常建议修改此参数或采样温度，但不要同时修改两者。(默认: 1)"
   },
   "frequencyPenalty": {
-    "label": "頻率懲罰",
-    "description": "係一個 -2.0 到 2.0 之間嘅數值。正嘅數值表示，如果 token 喺之前嘅文字中出現頻率越高，輸出嗰陣就會越大力噉懲罰佢，令到佢被揀中嘅機率降低，即係可以降低模型重複同一句説話嘅機會。(預設: 0)"
+    "label": "频率惩罚",
+    "description": "数值在 -2.0 到 2.0 之间。正值会根据新 token 在文本中的现有频率来惩罚它们，降低模型直接重复相同语句的可能性。(默认: 0)"
   },
-  "defaultChatConfig": "預設傾偈配置",
-  "defaultSystemMessage": "預設系統消息",
-  "resetToDefault": "重置為預設"
+  "defaultChatConfig": "默认聊天配置",
+  "defaultSystemMessage": "默认系统消息",
+  "resetToDefault": "重置为默认"
 }

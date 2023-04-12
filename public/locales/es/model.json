@@ -1,28 +1,28 @@
 {
-  "configuration": "Configuración",
-  "model": "Modelo",
+  "configuration": "配置",
+  "model": "模型",
   "token": {
-    "label": "Máximo número de tokens",
-    "description": "El máximo número de tokens que se utilizan para generar la respuesta. La longitud total de los tokens de entrada y los tokens generados está limitada por la longitud de contexto del modelo."
+    "label": "最大 Token",
+    "description": "助手生成一条信息可以包含的最大 token 数。最大 token 数也受到模型的总长度限制，上文的 token 数和生成的 token 数之和不能超过模型的 token 总数（例如 gpt-3.5-turbo 的 token 总数是 4096）。"
   },
-  "default": "Valores por defecto",
+  "default": "默认",
   "temperature": {
-    "label": "Temperatura",
-    "description": "Qué temperatura a usar (valores entre 0 y 2). Si se elige un valor alto, por ejemplo 0.8, la salida será más aleatoria, mientras que un valor bajo, como 0.2, hará que la salida sea más enfocada y predecible. Como recomendación general, se sugiere ajustar este parámetro o el top p, pero no ambos al mismo tiempo. Por defecto, el valor es 1."
+    "label": "采样温度",
+    "description": "使用何种采样温度，值在 0 到 2 之间。较高的数值如 0.8 会使输出更加随机，而较低的数值如 0.2 会使输出更加集中和确定。我们通常建议修改此参数或 Top-p，但不要同时修改两者。(默认: 1)"
   },
   "presencePenalty": {
-    "label": "Sanción por presencia",
-    "description": "Este parámetro permite controlar el nivel de repetición del modelo. La diferencia entre este parámetro y las sanciones por frecuencia, es que este se centra en evitar repeticiones de temas mientras que las sanciones por frecuencia en evitar repeticiones de palabras. Los valores positivos incrementan la probabilidad de que el modelo sea menos repetitivo y que hable sobre nuevos temas. Su valor de por defecto es 0."
+    "label": "存在惩罚",
+    "description": "数值在 -2.0 到 2.0 之间。正值会根据新 token 是否已经出现在文本中来惩罚它们，增加模型谈论新话题的可能性。 (默认: 0)"
   },
   "topP": {
-    "label": "Top-p (P máxima)",
-    "description": "Este argumento es una forma alternativa de controlar la aleatoridad y creatividad del texto. Por ejemplo, si establecemos su valor a 0.1, significa que solo se consideran los tokens que están comprendidos entre el 10% de la masa de probabilidad."
+    "label": "Top-p",
+    "description": "数值在 0 到 1 之间。采用核采样（nucleus sampling）的一种采样温度的替代方法，模型仅考虑前 Top-p 概率质量的 token。因此，0.1 表示仅考虑前 10% 概率质量的 token。我们通常建议修改此参数或采样温度，但不要同时修改两者。(默认: 1)"
   },
   "frequencyPenalty": {
-    "label": "Sanción por frecuencia",
-    "description": "Este argumento controla el nivel de repetición que permite usar al modelo en sus respuestas. Los valores positivos decrementan la probabilidad de que el modelo se repita. Su valor de por defecto es 0."
+    "label": "频率惩罚",
+    "description": "数值在 -2.0 到 2.0 之间。正值会根据新 token 在文本中的现有频率来惩罚它们，降低模型直接重复相同语句的可能性。(默认: 0)"
   },
-  "defaultChatConfig": "Configuración de chat de por defecto",
-  "defaultSystemMessage": "Mensaje de por defecto del sistema",
-  "resetToDefault": "Restablecer a los valores predeterminados"
+  "defaultChatConfig": "默认聊天配置",
+  "defaultSystemMessage": "默认系统消息",
+  "resetToDefault": "重置为默认"
 }

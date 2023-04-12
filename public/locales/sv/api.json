@@ -1,15 +1,15 @@
 {
-  "securityMessage": "Vi prioriterar säkerheten för din API-nyckel och hanterar den med största omsorg. Din nyckel lagras uteslutande på din webbläsare och delas aldrig med någon tredje part. Den används enbart för det avsedda ändamålet att få tillgång till OpenAI API och inte för någon annan obehörig användning.",
+  "securityMessage": "我们高度优先考虑您的 API 密钥的安全，并非常小心地处理它。您的密钥将专门存储在您的浏览器中，并且永远不会与任何第三方实体共享。它仅用于访问 OpenAI API 的预期用途，而不是用于任何其他未经授权的用途。",
   "apiEndpoint": {
-    "inputLabel": "API-slutpunkt",
-    "description": "När du väljer en inofficiell API-slutpunkt fungerar den som en proxy. En proxy fungerar genom att agera som mellanhand mellan din enhet och destinationsservern, i det här fallet OpenAI API. Genom att göra detta kan du få tillgång till OpenAI API i regioner där det annars kan vara begränsat.",
-    "warn": "Dessutom, om du anger en anpassad API-slutpunkt som ger gratis åtkomst till OpenAI API, kan du använda ChatGPT utan att behöva ange en API-nyckel genom att helt enkelt lämna API-nyckelfältet tomt. Det är dock viktigt att vara försiktig när du använder tredjeparts API-slutpunkter, eftersom opålitliga sådana kan logga din personliga information i konversationerna. Verifiera alltid tillförlitligheten hos en API-slutpunkt innan du använder den för att skydda din integritet och säkerhet."
+    "inputLabel": "API 端点",
+    "description": "选用非官方 API 端点时，它会作为代理运作。代理作用是在您的设备和目标服务器（在本例中为 OpenAI API）之间充当中介。通过这样做，您能够在被限制的地区访问 OpenAI API。",
+    "warn": "此外，如果您提供自定义 API 端点并授予免费访问 OpenAI API 的权限，您可以通过留空 API 密钥字段来使用 ChatGPT，而无需提供API密钥。但是，使用第三方 API 端点时务必谨慎，因为不可信的端点可能会在对话中记录您的个人信息。使用之前请始终验证 API 端点的可靠性以保护您的隐私和安全。"
   },
   "apiKey": {
-    "howTo": "Få din personliga API-nyckel <0>här</0>.",
-    "inputLabel": "API-nyckel"
+    "howTo": "在<0>此处</0>获取您的个人 API 密钥。",
+    "inputLabel": "API 密钥"
   },
-  "customEndpoint": "Använd anpassad API-slutpunkt",
-  "advancedConfig": "Visa avancerad API-konfiguration <0>här</0>",
-  "noApiKeyWarning": "Ingen API-nyckel angiven! Vänligen kontrollera dina API-inställningar."
+  "customEndpoint": "使用自定义 API 端点",
+  "advancedConfig": "在<0>此处</0>查看高级 API 设置",
+  "noApiKeyWarning": "缺少 API key，请检查 API 设置。"
 }
